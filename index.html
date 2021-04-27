@@ -28,7 +28,20 @@
       <style nonce="" type="text/css" data-late-css="">.fb0g6{position:relative}sentinel{}</style>
    </head>
    <body jscontroller="pjICDe" jsaction="rcuQ6b:npT2md; click:FAbpgf; auxclick:FAbpgf;keydown:.CLIENT;keyup:.CLIENT;keypress:.CLIENT;nHjqDd:.CLIENT;LhiQec:.CLIENT;GvneHb:.CLIENT;qako4e:.CLIENT" class="EIlDfe uOat3d">
-      <iframe src="https://powerva.microsoft.com/webchat/bots/35d776b2-f54e-492f-bb4f-866f008bd2c1" frameborder="0" style="width: 100%; height: 100%;">
+    <script> (function () {
+         var div = document.createElement("div");
+         document.getElementsByTagName('body')[0].appendChild(div);
+         div.outerHTML = "<div id='botDiv' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: #fff'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'></div><iframe width='400px' height='600px' src='https://powerva.microsoft.com/webchat/bots/35d776b2-f54e-492f-bb4f-866f008bd2c1'></iframe></div>"; 
+     
+         document.querySelector('body').addEventListener('click', function (e) {
+             e.target.matches = e.target.matches || e.target.msMatchesSelector;
+             if (e.target.matches('#botTitleBar')) { 
+                 var botDiv = document.querySelector('#botDiv'); 
+                 botDiv.style.height = botDiv.style.height == '600px' ? '38px' : '600px';
+             };
+         });
+     }());
+    </script>
     <script>(function(d,s,i){var f,j;f=d.getElementsByTagName(s)[0];j=d.createElement(s);j.async=true;j.src='https://mtag.microsoft.com/tags/'+i+'.js';f.parentNode.insertBefore(j,f);})(document,'script','13950053777413');</script>  
     <script aria-hidden="true" nonce="">window.wiz_progress&&window.wiz_progress();</script>
     <script type="text/javascript">
