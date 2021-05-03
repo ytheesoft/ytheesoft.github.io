@@ -31,7 +31,7 @@
     <script> (function () {
          var div = document.createElement("div");
          document.getElementsByTagName('body')[0].appendChild(div);
-         div.outerHTML = "<div id='botDiv' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: #fff'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'></div><iframe width='400px' height='600px' src='https://powerva.microsoft.com/webchat/bots/35d776b2-f54e-492f-bb4f-866f008bd2c1'></iframe></div>"; 
+         div.outerHTML = "<div id='botDiv' style='height: 38px; position: fixed; bottom: 0; z-index: 1000; background-color: #fff'><div id='botTitleBar' style='height: 38px; width: 400px; position:fixed; cursor: pointer;'></div><iframe src='https://webchat.botframework.com/embed/agentbot_demo?s=46bgvOSuhOA.pW6lBySbQSokarETnBitR3n-ozJKEWWBq4P3D7qC_2Y'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe></div>"; 
      
          document.querySelector('body').addEventListener('click', function (e) {
              e.target.matches = e.target.matches || e.target.msMatchesSelector;
